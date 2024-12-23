@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Juan Pablo Rodriguez</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <header id="header-encabezado">
+        <img
+          src="contactos.jpeg"
+          alt="Contactos"
+          width="100"
+          height="100"
+        />
+      </header>
+      <main id="main-encabezado">
+        <h1>Contacto</h1>
+      </main>
+    </header>
+    <main>
+      <form
+        action="https://formsubmit.co/jprodriguez2005@gmail.com"
+        method="POST"
+      >
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="Nombre"
+            required
+            id="nombre"
+            maxlength="20"
+            placeholder="Ingresa tu nombre"
+          />
+
+          <div>
+            <label for="apellido">Correo</label>
+            <input
+              type="text"
+              name="apellido"
+              required
+              id="apellido"
+              maxlength="20"
+              placeholder="Ingresa tu apellido"
+            />
+          </div>
+          <label for="mensaje">Mensaje</label>
+          <input
+            type="text"
+            name="mensaje"
+            required
+            id="mensaje"
+            maxlength="20"
+            placeholder="Ingresa tu mensaje"
+          />
+          <div></div>
+        </fieldset>
+        <button type="submit" onclick="validarFormulario()">Enviar</button>
+        <input type="reset" value="Borrar" />
+      </form>
+    </main>
+    <aside>
+      <li><a href="index.html">Inicio</a></li>
+      <hr>
+      <div id="contrataciones">
+          <p>Para mayor información y contrataciones dirigirse a:</p>
+          <p>E-mail: lamoenia_contrataciones@gmail.com 
+          <p>Tel: +54 11 5147-4494</p>     
+      </div>
+      <hr>
+      <div id="ventas">
+          <p>Para compra de merchardising y souvenirs</p>
+          <p>E-mail: lamoenia_ventas@gmail.com</p>    
+          <p>Tel: +54 11 5247-4194</p>    
+      </div>
+      <hr>
+    </aside>
+    <script src="carrito.js"></script>
+    <footer>
+      <div id="botonera">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="discografia.html">Discografía</a></li>
+          <li><a href="reseña.html">Reseña</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="producto.html">Productos</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>

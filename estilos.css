@@ -1,0 +1,200 @@
+* {
+    /*background-color: aquamarine;*/
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+
+   
+  header,
+  main,
+  aside,
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p {
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+  }
+
+
+  #botonera ul li a {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  #botonera {
+    /*background-color: #EF2825;*/
+    height: 40px;
+    /*visibility: collapse;*/
+  }
+
+  #botonera li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+
+  #botonera ul {
+    margin: auto;
+    height: 40px;
+    width: 600px;
+    display: inline-block;
+    list-style: none;
+    /*border: solid blue 1px;*/
+  }
+  
+#contrataciones {
+  text-emphasis-color: rgb(26, 11, 65); 
+}
+  
+#ventas {
+  text-emphasis-color: rgb(26, 11, 65); 
+}
+
+#footer-carrito{
+  background-color: black;
+}
+#header-encabezado {
+  background-color: brown;
+}
+
+li {
+  color: black;
+}
+#main-encabezado {
+  background-color: brown;
+}
+
+  body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 75px 1fr 50px;
+    gap: 0.5em;
+    grid-template-areas:
+      "header header"
+      "main"
+      "footer footer";
+  }
+  
+  footer {
+    background-color: red;
+    /*grid-row-start: 3;
+      grid-column: span 2;*/
+    grid-area: footer;
+    align-items: left;
+  }
+  
+  header {
+    color:blue;
+    background-color: aqua;
+    /*grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;*/
+    grid-area: header;
+  }
+  
+  main {
+    background-color: orange;
+    background-image: url('guitarra.jpg');
+    /*grid-column-start: 1;
+      grid-row-start: 2;*/
+    grid-area: main;
+  }
+  
+  aside {
+    color: white;
+    background-color: rgb(175, 89, 236);
+    grid-area: aside;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+  }
+  
+  #carrito-body {
+    background-color: rgb(175, 89, 236);
+    align-items: center;
+    font-weight: bold;
+    background-image: url('guitarra.jpg');
+  }
+  
+  #producto-body {
+    background-color: rgb(175, 89, 236);
+    align-items: center;
+    font-weight: bold;
+  }
+
+  nav {
+    color:blue;
+    background-color: rgb(10, 153, 70);
+  }
+
+  td {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-top: 1em;
+    border: 2px solid black;
+  }
+
+  @media screen and (min-width: 1px) and (max-width: 768px)  {
+    body {
+      grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+
+      background-color: rgb(175, 89, 236);  
+    }
+    
+    #botonera {
+      height: 40px;
+      visibility: visible;
+      background-color: red;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px)  {
+    body {
+      grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+
+      /*background-color: rgb(175, 89, 236);*/
+      #botonera {
+        height: 40px;
+        visibility: visible;
+        background-color: red;
+      }
+    }
+  }
+
+@media screen and (min-width: 1024px) {
+    body {
+      grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    }
+
+    aside {
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+    .listado-productos {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }

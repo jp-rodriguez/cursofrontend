@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body id="carrito-body">
+    <h1>Tiendas de Recuerdos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="producto.html">Productos</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="carrito">
+        <h2>Mi Carrito Rockero</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Recuerdo</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody class="items">
+            <tr data-id="">
+              <td>Nombre</td>
+              <td>Cantidad</td>
+              <td>Precio</td>
+              <td><a href="http://127.0.0.1:5500/producto.html">Detalle</a></td>
+              <td><button id="sumar">+</button></td>
+              <td><button id="restar">-</button></td>
+            </tr>
+          </tbody>
+        </table>
+          <p>Total: </p>
+      </section>
+    </main>
+    <footer id="footer-carrito">
+      <button id="vaciarc">Vaciar Carrito</button>
+      <p></p>
+      <button id="comprarb">Comprar</button>
+    </footer>
+    <script src="carrito.js"></script>
+  </body>
+</html>

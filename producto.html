@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body id="producto-body">
+    <h1>Tienda de Recuerdos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="listado-productos">
+        <article data-id="">
+          <h3></h3>
+          <p></p>
+          <p>$</p>
+          <button type="button" class="agregar">Agregar</button>
+        </article>
+      </section>
+    </main>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="productos.js"></script>
+    <footer>
+      <div id="botonera">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="discografia.html">Discografía</a></li>
+          <li><a href="reseña.html">Reseña</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      cargarProductos();
+    </script>
+  </body>
+</html>
